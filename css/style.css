@@ -1,0 +1,87 @@
+/*reset default styles*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;  /*This is to avoid overflowing of elements*/
+}
+
+body {
+	background-color: white;
+	font-family: 'Merriweather', serif;
+	text-align: center;
+}
+
+header {
+	padding: 40px;
+}
+
+header > h1 {
+	margin-bottom: 11px;
+}
+
+header > h1 > a {
+	color: black;
+	text-decoration: none;
+	font-size: 40px;
+}
+
+/*to change the color of header link when hovering, transition property referred from the source code*/
+header > h1 > a:hover {
+	color: #0099cc;
+	transition: .23s ease-in;
+}
+
+header > h2 {
+	color: gray;
+	font-size: 18px;
+}
+
+nav {
+	text-align: center;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+
+}
+
+nav > ul > li {
+	display: inline-block;
+	padding: 16px;
+}
+
+nav > ul > li > a {
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	margin: 12px;
+}
+
+nav > ul > li > a:hover {
+	color: #0099cc;
+	transition: .23s ease-in;
+}
+
+main {
+	margin-top: 90px;
+}
+
+.dailyEntry {
+	margin: 50px;
+}
+
+
+.entryTitle > a {
+	text-decoration: none;
+	color: #333;
+}
+
+/*to change color of entry title when hovering*/
+.entryTitle > a:hover { 
+	color: #0099cc; 
+	transition: .23s ease-in;
+}
+
+/*size of image in the daily entry*/
+.imageEntry { 
+	height: 400px;
+	width: 800px;
+}
