@@ -11,6 +11,11 @@ body {
 	text-align: center;
 }
 
+.wholeContainer {
+	width: 1100px;
+	margin: 0 auto;
+}
+
 header {
 	padding: 40px;
 }
@@ -34,6 +39,7 @@ header > h1 > a:hover {
 header > h2 {
 	color: rgb(172,172,172);
 	font-size: 22px;
+	font-weight: 300;
 }
 
 nav {
@@ -41,20 +47,19 @@ nav {
 	border-bottom: 1px solid rgb(248, 248, 248);
 	margin-top: 15px;
 	margin-bottom: 15px;
-	box-sizing: border-box;
-
-
+	width: 90%;
+	display: inline-block;
 }
 
 nav > ul > li {
-	display: inline-block;
-	padding: 16px;
+	display: inline-block; /*to diplay the items in one line*/
+	padding: 16px; /*the spaces of items from the borders*/
 }
 
 nav > ul > li > a {
 	text-decoration: none;
 	color: black;
-	font-size: 20px;
+	font-size: 16px;
 	margin: 10px;
 }
 
@@ -64,18 +69,26 @@ nav > ul > li > a:hover {
 }
 
 main {
-	margin-top: 90px;
+	width: 100%;
 }
 
 .dailyEntry {
-	margin: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%;
+	display: block;
 }
 
+.entryTitle {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
 
 .entryTitle > a {
 	text-decoration: none;
 	color: #333;
 	font-size: 42px;
+
 }
 
 /*to change color of entry title when hovering*/
@@ -88,19 +101,91 @@ main {
 .imageEntry { 
 	height: 400px;
 	width: 800px;
+	margin-bottom: 10px;
+	display: inline-block;
 }
+
 
 .backHome {
 	margin: 16px;
 }
 
-.backHome > a {
+.backHome > p > a {
 	text-decoration: none;
 	color: #09c;
 }
 
-.backHome > a:hover {
+.backHome > p > a:hover {
 	text-decoration: none;
 	color: #333;
 	transition: .23s ease-in;
+}
+
+.entryTime {
+	color: #09c;
+	text-decoration: none;
+}
+
+.entryTime:hover {
+	color: #333;
+	transition: .23s ease-in;
+}
+
+.entryAuthor {
+	color: #09c;
+	text-decoration: none;
+}
+
+.entryAuthor:hover {
+	color: #333;
+	transition: .23s ease-in;
+}
+
+.postContent {
+	height: 0 auto;
+	width: 800px;
+	text-align: justify;
+	display: inline-block;
+
+}
+
+.timestampAuthor > p {
+	margin-bottom: 20px;
+}
+
+.entryTag {
+	padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.entryTag > p > a {
+	text-decoration: none;
+	color: #09c;
+}
+
+.entryTag > p > a:hover {
+	color: #333;
+	transition: .23s ease-in;
+}
+
+.postSeparator { /*The dotted lines before anoter daily entry*/
+	border-bottom: 1px dotted rgb(172,172,172);
+	width: 300px;
+	margin: 0 auto;
+}
+
+
+.sidebarButton > a > i {
+	padding: 20px;
+	font-size: 1em;
+}
+
+
+.sidebarButton > a {
+	color: black;
+}
+
+.sidebarButton {
+	position: fixed;
 }
